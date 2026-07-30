@@ -13,9 +13,4 @@ always@(posedge clk)begin
 end
 endmodule
 
-module single_port_ram_tb();
-reg clk;
-reg [31:0]addr;
-reg wr_en;
-reg [31:0]write_data;
-wire [31:0]read_data;
+

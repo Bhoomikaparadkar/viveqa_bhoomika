@@ -1,4 +1,4 @@
-# A Report on RTL-Based SHA-256 UART Authentication System
+# A Report on FPGA-Based SHA-256 UART Authentication System
 
 **Target Board:** AT-STLN-ARTIX7-001 (XC7A35T)  
 **System Clock:** 24 MHz  
@@ -112,44 +112,7 @@ Since the FPGA board contains only **8 LEDs**, they indicate the authentication 
 
 # **Part B — System Architecture**
 
-```
-              +----------------------+
-              |      PC / PuTTY      |
-              +----------+-----------+
-                         |
-                    UART Serial
-                         |
-                         ▼
-                +------------------+
-                |    UART RX       |
-                +------------------+
-                         |
-                         ▼
-                +------------------+
-                | Password Buffer  |
-                +------------------+
-                         |
-                  Start Hashing
-                         |
-                         ▼
-                +------------------+
-                |   SHA-256 Core   |
-                +------------------+
-                         |
-                  256-bit Digest
-                         |
-                         ▼
-               +--------------------+
-               | Hash Comparator    |
-               +--------------------+
-                         |
-               Match / No Match
-                         |
-         +---------------+---------------+
-         |                               |
-         ▼                               ▼
-   UART Result                     LED Status
-```
+```<img width="1212" height="1297" alt="image" src="https://github.com/user-attachments/assets/46d963f7-730a-4c1f-b2cc-75665f2e1539" />
 
 ---
 

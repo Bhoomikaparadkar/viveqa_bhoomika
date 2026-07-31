@@ -112,7 +112,11 @@ Since the FPGA board contains only **8 LEDs**, they indicate the authentication 
 
 # **Part B — System Architecture**
 
-```<img width="1212" height="1297" alt="image" src="https://github.com/user-attachments/assets/46d963f7-730a-4c1f-b2cc-75665f2e1539" />
+<p align="center">
+  <img src="images/system_architecture.png" alt="System Architecture" width="700">
+</p>
+
+**Figure 1:** Block diagram of the UART-Based SHA-256 Authentication System.
 
 ---
 

@@ -227,9 +227,7 @@ Enter Password:
 | **Test Case** | **Input** | **Expected Result** |
 |---------------|-----------|---------------------|
 | TC-1 | Correct Password | Authentication Successful |
-| TC-2 | Incorrect Password | Authentication Failed |
-| TC-3 | Empty Password | Authentication Failed |
-| TC-4 | Long Password | Authentication Failed |
+| TC-2 | Incorrect Password | Authentication Failed 
 
 ---
 

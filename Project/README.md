@@ -103,10 +103,9 @@ Since the FPGA board contains only **8 LEDs**, they indicate the authentication 
 
 | **LED Pattern** | **Status** |
 |:---------------:|------------|
-| `11111111` | Access Granted |
-| `00000000` | Access Denied |
-| `10101010` | SHA-256 Processing |
-| `01010101` | Waiting for Password |
+| `10000000` | Access Granted |
+| `01000000` | Access Denied |
+
 
 ---
 
@@ -201,7 +200,7 @@ Hash Comparator
 | Baud Rate | 9600 |
 | Data Bits | 8 |
 | Parity | None |
-| Stop Bits | 1 |
+| Stop Bits | 0 |
 
 ---
 
@@ -210,7 +209,7 @@ Hash Comparator
 1. Open PuTTY.
 2. Configure UART settings.
 3. Press FPGA Reset.
-4. Terminal displays:
+4. LCD displays:
 
 ```
 Enter Password:
